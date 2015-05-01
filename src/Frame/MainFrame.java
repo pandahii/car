@@ -37,7 +37,7 @@ import Com.Common;
 import Com.ImageEnhance;
 import Com.ImageSegment;
 import Com.ImageTool;
-
+@SuppressWarnings("rawtypes")
 public class MainFrame extends  JFrame {
 	
 	static final long serialVersionUID = 0;	
@@ -435,7 +435,7 @@ public class MainFrame extends  JFrame {
 			fileListScrollPane.setViewportView(fileList);
 		}
 		
-		@SuppressWarnings("static-access")
+		@SuppressWarnings({ "static-access", "unchecked" })
 		private void openFileAction(ActionEvent evt) {
 			int returnValue;
 	        String fileURL;	

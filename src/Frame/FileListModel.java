@@ -1,9 +1,11 @@
 
 package Frame;
 import java.util.Vector;
+
 import javax.swing.ListModel;
 import javax.swing.event.ListDataListener;
 
+@SuppressWarnings("rawtypes")
 public class FileListModel implements ListModel {
     public class FileListModelEntry {
         public String fileName;
